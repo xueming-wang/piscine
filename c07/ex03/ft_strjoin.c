@@ -17,11 +17,10 @@ int	strlen_strs(int size, char **strs)
 	int len;
 
 	i = 0;
-	j = 0;
 	len = 0;
 	while (i < size)
 	{
-		
+		j = 0;
 		while (strs[i][j])
 		{
 			j++;
