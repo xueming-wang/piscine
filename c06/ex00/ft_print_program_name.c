@@ -1,22 +1,16 @@
 #include <unistd.h>
 
-int	ft_strlen(char *c)
+void	ft_putstr(char *str)
 {
-	int i;
-
-	i = 0;
-	while(c[i])
-		i++;
-	return (i);
+	while (*str)
+		write (1, str++, 1);
 }
 
 int	main(int argc, char **argv)
 {
-	int j;
-
-	j = 0;
-	j = ft_strlen(argv[0]);
-	write (1, argv[0], j);
+	void(argc);
+	
+	ft_putstr(argv[0]);
 	write (1, "\n", 1);
 	return (0);
 }

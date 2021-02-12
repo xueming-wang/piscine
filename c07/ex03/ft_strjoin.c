@@ -17,11 +17,10 @@ int	strlen_strs(int size, char **strs)
 	int len;
 
 	i = 0;
-	j = 0;
 	len = 0;
 	while (i < size)
 	{
-		
+		j = 0;
 		while (strs[i][j])
 		{
 			j++;
@@ -60,7 +59,11 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 		return (NULL); 
 	while (size > 0 && i < size)
 	{
+<<<<<<< HEAD
 		j = 0;
+=======
+		j = 0; 
+>>>>>>> 0852325b5ad1847fd1043f6a616748ba9c846137
 		while (strs[i][j])	
 			group[group_i++] = strs[i][j++];
 		sep_i = 0; 
@@ -75,7 +78,11 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 #include <libc.h>
 int main()
 {
+<<<<<<< HEAD
 	int size = 2;
+=======
+
+>>>>>>> 0852325b5ad1847fd1043f6a616748ba9c846137
 	char *strs[3] = {"hello", "world","YINGYINGYING"}; 
 	 
 	char *sep = "-";
