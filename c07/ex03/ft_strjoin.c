@@ -56,37 +56,29 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	i = 0;
 	group_i = 0;
 	group = ft_malloc(size, strs, sep);
-	if (!group) // kk
-		return (NULL); // kk
+	if (!group) 
+		return (NULL); 
 	while (size > 0 && i < size)
 	{
-		j = 0; // kk
+		j = 0;
 		while (strs[i][j])	
 			group[group_i++] = strs[i][j++];
-		sep_i = 0; // kk
+		sep_i = 0; 
 		while (sep[sep_i] && i < size - 1)
 			group[group_i++] = sep[sep_i++];
-		i++; // kk
+		i++; 
 	}
-	//if(size ==  0) xuexue
 	group[group_i] = '\0';
 	return (group);
 }
 
 #include <libc.h>
-int main1()
+int main()
 {
 	int size = 2;
-
-	//char group[2][3] = {1,2,3,4,5,6}; xuexue
-	char *strs[3] = {"hello", "world","YINGYINGYING"}; // kk
-	char *s = "hello";
-	char *test[2];
-	*test[0] = "hello";
-	*test[1] = "world";
+	char *strs[3] = {"hello", "world","YINGYINGYING"}; 
 	 
 	char *sep = "-";
-	//printf("%s\n", ft_strjoin(size, &group, sep)); xuexue
-	printf("%s\n", ft_strjoin(3, strs, sep)); // kk
+	printf("%s\n", ft_strjoin(3, strs, sep)); 
 	return 0;
 }
