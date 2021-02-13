@@ -30,8 +30,10 @@ int				ft_check_col_up_with_condition(int col, int tab[4][4],
 int				ft_check_col_down_with_condition(int col, int tab[4][4],
 		int *condition);
 int				ft_is_valide(int tab[4][4], int position, int *condition);
-int				check_param(char *str);
-int				ft_strlen2(char **argv);
+int				ft_check_argv(char *argv);
+int				*ft_condition(char *argv);
+
+
 typedef struct	s_variables
 {
 	int raw;
