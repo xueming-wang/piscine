@@ -13,6 +13,12 @@
 #include "ft_rush.h"
 #include <libc.h>
 
+/*
+** Verifier le string argv (condition) donne est bien en bon format.
+** Exemple : ./a.out "4 2 1 2 1 2 4 2 3 3 2 1 2 1 3 3" 
+** -> Bon format, avec 16 chiffres et 15 espaces.
+** -> Et que les chiffres donnes sont bien entre 1 et 4.
+*/
 int		ft_check_argv(char *argv)
 {
 	int i;
@@ -40,6 +46,11 @@ int		ft_check_argv(char *argv)
 	return (1);
 }
 
+/*
+** Stocker les valeurs donnee dans un tableau de 16 (parce que 16 chiffres).
+** Le "if" dans Loop : Verifier si le caractere actuel est bien un chiffres
+** entre 1 et 4, et non espaces, puis le stocker.
+*/
 int		*ft_condition(char *argv)
 {
 	int *condition;

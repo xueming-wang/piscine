@@ -12,6 +12,9 @@
 
 #include "ft_rush.h"
 
+/*
+** verifier si les lignes de la colonne actuelle n‘a pas de repetition.
+*/
 int		ft_check_raw(int number, int raw, int tab[4][4])
 {
 	int col_check;
@@ -26,6 +29,9 @@ int		ft_check_raw(int number, int raw, int tab[4][4])
 	return (1);
 }
 
+/*
+** verifier si les colonnes de la ligne actuelle n‘a pas de repetition.
+*/
 int		ft_check_col(int number, int col, int tab[4][4])
 {
 	int raw_check;

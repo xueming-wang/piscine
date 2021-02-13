@@ -12,6 +12,10 @@
 
 #include "ft_rush.h"
 
+/*
+** Afficher le resultat.
+** Transformer les int en char en ajoutant le + '0'.
+*/
 void	ft_print_tab(int tab[4][4])
 {
 	int		raw;
@@ -33,6 +37,9 @@ void	ft_print_tab(int tab[4][4])
 	}
 }
 
+/*
+** Initialiser les valeurs de tableau en 0.
+*/
 void	ft_init_tab(int tab[4][4])
 {
 	int		raw;
